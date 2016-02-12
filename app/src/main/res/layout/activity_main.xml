@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <com.example.administrator.facemaker.Face
+            android:layout_width="317dp"
+            android:layout_height="527dp"
+            android:id="@+id/faceDisplay"
+            android:layout_gravity="center"
+            android:background="#FFFFFFFF" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/redBar"
+            android:layout_gravity="right|top"
+            android:max="255" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/greenBar"
+            android:layout_gravity="right|center_vertical"
+            android:max="255" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueBar"
+            android:layout_gravity="right|bottom"
+            android:max="255" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hair"
+                android:id="@+id/hairButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eyes"
+                android:id="@+id/eyesButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin"
+                android:id="@+id/skinButton" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical">
+
+            <Spinner
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/hairSpinner"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/eyesSpinner"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/noseSpinner"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random Face"
+            android:id="@+id/randomButton"
+            android:layout_gravity="left|bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/redLabel"
+            android:layout_gravity="right|top"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:id="@+id/greenLabel"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:id="@+id/blueLabel"
+            android:layout_gravity="right|bottom"
+            android:textColor="#0000ff"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+</RelativeLayout>

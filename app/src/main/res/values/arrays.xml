@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hairspinner_values">
+        <item>bald</item>
+        <item>buzz</item>
+        <item>spikes</item>
+    </string-array>
+
+    <string-array name="eyesspinner_values">
+        <item>normal</item>
+        <item>slanted</item>
+        <item>bug</item>
+    </string-array>
+
+    <string-array name="nosespinner_values">
+        <item>honker</item>
+        <item>clown</item>
+        <item>human</item>
+    </string-array>
+
+
+</resources>
